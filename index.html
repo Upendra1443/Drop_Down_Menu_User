@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Profile Manu Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="profile-menu-img/images/logo.png" class="logo" alt="logo">
+            <ul>
+                <li><a href="#" active>Home</a></li>
+                <li><a href="#">Exlusive</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+            <img src="profile-menu-img/images/user.png" class="user-pic" alt="User Profile" onclick="togglemenu()">
+
+
+            <div class="sub-menu-warp" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="profile-menu-img/images/user.png" alt="">
+                        <h2>Jems Bond</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <img src="profile-menu-img/images/profile.png" alt="profile img">
+                        <p>Edit Profile</p>
+                        <span> > </span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="profile-menu-img/images/setting.png" alt="Setting img">
+                        <p>Setting & Privecy</p>
+                        <span> > </span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="profile-menu-img/images/help.png" alt="help img">
+                        <p>Help & Support</p>
+                        <span> > </span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="profile-menu-img/images/logout.png" alt="Logout img">
+                        <p>Log Out</p>
+                        <span> > </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <script>
+        let subMenu = document.getElementById('subMenu');
+
+        function togglemenu(){
+            subMenu.classList.toggle('open-menu');
+        }
+    </script>
+</body>
+</html>
